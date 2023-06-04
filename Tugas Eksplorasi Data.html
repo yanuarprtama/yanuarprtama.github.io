@@ -1,0 +1,924 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TUGAS EKSPLORASI DATA &#8212; Pendata</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Tugas Eksplorasi Data';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Tugas-Pendata-DecisionTree" href="Tugas%20Pendata-DecisionTree.html" />
+    <link rel="prev" title="CARA MENGUMPULKAN DATA DARI BERBAGAI SUMBER" href="Cara%20mengumpulkan%20data%20dari%20berbagai%20sumber.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.jpeg" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/logo.jpeg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to My Jupyter Notebook
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Naive_Bayes.html"><strong>Naive Bayes Classification</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cara%20mengumpulkan%20data%20dari%20berbagai%20sumber.html">CARA MENGUMPULKAN DATA DARI BERBAGAI SUMBER</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">TUGAS EKSPLORASI DATA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tugas%20Pendata-DecisionTree.html">Tugas-Pendata-DecisionTree</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="Tugas%20UTS.html"><strong>UTS</strong></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="NAIVE_PCA.html">Tugas Pendata-Implementasikan Sklearn Naive-PCA  pada data iris</a></li>
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="KNN_PCA.html">Tugas Pendata-Implementasikan Sklearn KNN-PCA pada data iris</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ANNBP_PCA.html">Tugas Pendata-Implementasikan Sklearn ANNBP-PCA pada data iris</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DT_PCA.html">Tugas Pendata-Implementasikan Sklearn DT-PCA pada data iris</a></li>
+
+
+
+
+
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/executablebooks/jupyter-book/blob/master/docs/Tugas Eksplorasi Data.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FTugas Eksplorasi Data.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Tugas Eksplorasi Data.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>TUGAS EKSPLORASI DATA</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="tex2jax_ignore mathjax_ignore section" id="tugas-eksplorasi-data">
+<h1>TUGAS EKSPLORASI DATA<a class="headerlink" href="#tugas-eksplorasi-data" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">psycopg2</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Buat koneksi ke PostgreSQL</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+    <span class="n">host</span><span class="o">=</span><span class="s2">&quot;localhost&quot;</span><span class="p">,</span>
+    <span class="n">database</span><span class="o">=</span><span class="s2">&quot;postgres&quot;</span><span class="p">,</span>
+    <span class="n">user</span><span class="o">=</span><span class="s2">&quot;postgres&quot;</span><span class="p">,</span>
+    <span class="n">password</span><span class="o">=</span><span class="s2">&quot;030119&quot;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">OperationalError</span>Traceback (most recent call last)
+<span class="nn">&lt;ipython-input-2-9abf93036757&gt;</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Buat koneksi ke PostgreSQL</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">conn</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span>     <span class="n">host</span><span class="o">=</span><span class="s2">&quot;localhost&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span>     <span class="n">database</span><span class="o">=</span><span class="s2">&quot;postgres&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span>     <span class="n">user</span><span class="o">=</span><span class="s2">&quot;postgres&quot;</span><span class="p">,</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/psycopg2/__init__.py</span> in <span class="ni">connect</span><span class="nt">(dsn, connection_factory, cursor_factory, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">120</span> 
+<span class="g g-Whitespace">    </span><span class="mi">121</span>     <span class="n">dsn</span> <span class="o">=</span> <span class="n">_ext</span><span class="o">.</span><span class="n">make_dsn</span><span class="p">(</span><span class="n">dsn</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">122</span>     <span class="n">conn</span> <span class="o">=</span> <span class="n">_connect</span><span class="p">(</span><span class="n">dsn</span><span class="p">,</span> <span class="n">connection_factory</span><span class="o">=</span><span class="n">connection_factory</span><span class="p">,</span> <span class="o">**</span><span class="n">kwasync</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">123</span>     <span class="k">if</span> <span class="n">cursor_factory</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">124</span>         <span class="n">conn</span><span class="o">.</span><span class="n">cursor_factory</span> <span class="o">=</span> <span class="n">cursor_factory</span>
+
+<span class="ne">OperationalError</span>: could not connect to server: Connection refused
+	<span class="n">Is</span> <span class="n">the</span> <span class="n">server</span> <span class="n">running</span> <span class="n">on</span> <span class="n">host</span> <span class="s2">&quot;localhost&quot;</span> <span class="p">(</span><span class="mf">127.0.0.1</span><span class="p">)</span> <span class="ow">and</span> <span class="n">accepting</span>
+	<span class="n">TCP</span><span class="o">/</span><span class="n">IP</span> <span class="n">connections</span> <span class="n">on</span> <span class="n">port</span> 5432<span class="o">?</span>
+<span class="n">could</span> <span class="ow">not</span> <span class="n">connect</span> <span class="n">to</span> <span class="n">server</span><span class="p">:</span> <span class="n">Cannot</span> <span class="n">assign</span> <span class="n">requested</span> <span class="n">address</span>
+	<span class="n">Is</span> <span class="n">the</span> <span class="n">server</span> <span class="n">running</span> <span class="n">on</span> <span class="n">host</span> <span class="s2">&quot;localhost&quot;</span> <span class="p">(::</span><span class="mi">1</span><span class="p">)</span> <span class="ow">and</span> <span class="n">accepting</span>
+	<span class="n">TCP</span><span class="o">/</span><span class="n">IP</span> <span class="n">connections</span> <span class="n">on</span> <span class="n">port</span> 5432<span class="o">?</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Query untuk mengambil data iris dari tabel di PostgreSQL</span>
+<span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;SELECT * FROM data_iris&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Baca data iris dari PostgreSQL ke dalam DataFrame pandas</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="n">sql</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\ASUS\AppData\Local\Temp\ipykernel_26972\2085735111.py:2: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql_query(sql, conn)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Tampilkan data dari DataFrame iris</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>      id  sepallengthcm  sepalwidthcm  petallengthcm  petalwidthcm  \
+0      1            5.1           3.5            1.4           0.2   
+1      2            4.9           3.0            1.4           0.2   
+2      3            4.7           3.2            1.3           0.2   
+3      4            4.6           3.1            1.5           0.2   
+4      5            5.0           3.6            1.4           0.2   
+5      6            5.4           3.9            1.7           0.4   
+6      7            4.6           3.4            1.4           0.3   
+7      8            5.0           3.4            1.5           0.2   
+8      9            4.4           2.9            1.4           0.2   
+9     10            4.9           3.1            1.5           0.1   
+10    11            5.4           3.7            1.5           0.2   
+11    12            4.8           3.4            1.6           0.2   
+12    13            4.8           3.0            1.4           0.1   
+13    14            4.3           3.0            1.1           0.1   
+14    15            5.8           4.0            1.2           0.2   
+15    16            5.7           4.4            1.5           0.4   
+16    17            5.4           3.9            1.3           0.4   
+17    18            5.1           3.5            1.4           0.3   
+18    19            5.7           3.8            1.7           0.3   
+19    20            5.1           3.8            1.5           0.3   
+20    21            5.4           3.4            1.7           0.2   
+21    22            5.1           3.7            1.5           0.4   
+22    23            4.6           3.6            1.0           0.2   
+23    24            5.1           3.3            1.7           0.5   
+24    25            4.8           3.4            1.9           0.2   
+25    26            5.0           3.0            1.6           0.2   
+26    27            5.0           3.4            1.6           0.4   
+27    28            5.2           3.5            1.5           0.2   
+28    29            5.2           3.4            1.4           0.2   
+29    30            4.7           3.2            1.6           0.2   
+30    31            4.8           3.1            1.6           0.2   
+31    32            5.4           3.4            1.5           0.4   
+32    33            5.2           4.1            1.5           0.1   
+33    34            5.5           4.2            1.4           0.2   
+34    35            4.9           3.1            1.5           0.1   
+35    36            5.0           3.2            1.2           0.2   
+36    37            5.5           3.5            1.3           0.2   
+37    38            4.9           3.1            1.5           0.1   
+38    39            4.4           3.0            1.3           0.2   
+39    40            5.1           3.4            1.5           0.2   
+40    41            5.0           3.5            1.3           0.3   
+41    42            4.5           2.3            1.3           0.3   
+42    43            4.4           3.2            1.3           0.2   
+43    44            5.0           3.5            1.6           0.6   
+44    45            5.1           3.8            1.9           0.4   
+45    46            4.8           3.0            1.4           0.3   
+46    47            5.1           3.8            1.6           0.2   
+47    48            4.6           3.2            1.4           0.2   
+48    49            5.3           3.7            1.5           0.2   
+49    50            5.0           3.3            1.4           0.2   
+50    51            7.0           3.2            4.7           1.4   
+51    52            6.4           3.2            4.5           1.5   
+52    53            6.9           3.1            4.9           1.5   
+53    54            5.5           2.3            4.0           1.3   
+54    55            6.5           2.8            4.6           1.5   
+55    56            5.7           2.8            4.5           1.3   
+56    57            6.3           3.3            4.7           1.6   
+57    58            4.9           2.4            3.3           1.0   
+58    59            6.6           2.9            4.6           1.3   
+59    60            5.2           2.7            3.9           1.4   
+60    61            5.0           2.0            3.5           1.0   
+61    62            5.9           3.0            4.2           1.5   
+62    63            6.0           2.2            4.0           1.0   
+63    64            6.1           2.9            4.7           1.4   
+64    65            5.6           2.9            3.6           1.3   
+65    66            6.7           3.1            4.4           1.4   
+66    67            5.6           3.0            4.5           1.5   
+67    68            5.8           2.7            4.1           1.0   
+68    69            6.2           2.2            4.5           1.5   
+69    70            5.6           2.5            3.9           1.1   
+70    71            5.9           3.2            4.8           1.8   
+71    72            6.1           2.8            4.0           1.3   
+72    73            6.3           2.5            4.9           1.5   
+73    74            6.1           2.8            4.7           1.2   
+74    75            6.4           2.9            4.3           1.3   
+75    76            6.6           3.0            4.4           1.4   
+76    77            6.8           2.8            4.8           1.4   
+77    78            6.7           3.0            5.0           1.7   
+78    79            6.0           2.9            4.5           1.5   
+79    80            5.7           2.6            3.5           1.0   
+80    81            5.5           2.4            3.8           1.1   
+81    82            5.5           2.4            3.7           1.0   
+82    83            5.8           2.7            3.9           1.2   
+83    84            6.0           2.7            5.1           1.6   
+84    85            5.4           3.0            4.5           1.5   
+85    86            6.0           3.4            4.5           1.6   
+86    87            6.7           3.1            4.7           1.5   
+87    88            6.3           2.3            4.4           1.3   
+88    89            5.6           3.0            4.1           1.3   
+89    90            5.5           2.5            4.0           1.3   
+90    91            5.5           2.6            4.4           1.2   
+91    92            6.1           3.0            4.6           1.4   
+92    93            5.8           2.6            4.0           1.2   
+93    94            5.0           2.3            3.3           1.0   
+94    95            5.6           2.7            4.2           1.3   
+95    96            5.7           3.0            4.2           1.2   
+96    97            5.7           2.9            4.2           1.3   
+97    98            6.2           2.9            4.3           1.3   
+98    99            5.1           2.5            3.0           1.1   
+99   100            5.7           2.8            4.1           1.3   
+100  101            6.3           3.3            6.0           2.5   
+101  102            5.8           2.7            5.1           1.9   
+102  103            7.1           3.0            5.9           2.1   
+103  104            6.3           2.9            5.6           1.8   
+104  105            6.5           3.0            5.8           2.2   
+105  106            7.6           3.0            6.6           2.1   
+106  107            4.9           2.5            4.5           1.7   
+107  108            7.3           2.9            6.3           1.8   
+108  109            6.7           2.5            5.8           1.8   
+109  110            7.2           3.6            6.1           2.5   
+110  111            6.5           3.2            5.1           2.0   
+111  112            6.4           2.7            5.3           1.9   
+112  113            6.8           3.0            5.5           2.1   
+113  114            5.7           2.5            5.0           2.0   
+114  115            5.8           2.8            5.1           2.4   
+115  116            6.4           3.2            5.3           2.3   
+116  117            6.5           3.0            5.5           1.8   
+117  118            7.7           3.8            6.7           2.2   
+118  119            7.7           2.6            6.9           2.3   
+119  120            6.0           2.2            5.0           1.5   
+120  121            6.9           3.2            5.7           2.3   
+121  122            5.6           2.8            4.9           2.0   
+122  123            7.7           2.8            6.7           2.0   
+123  124            6.3           2.7            4.9           1.8   
+124  125            6.7           3.3            5.7           2.1   
+125  126            7.2           3.2            6.0           1.8   
+126  127            6.2           2.8            4.8           1.8   
+127  128            6.1           3.0            4.9           1.8   
+128  129            6.4           2.8            5.6           2.1   
+129  130            7.2           3.0            5.8           1.6   
+130  131            7.4           2.8            6.1           1.9   
+131  132            7.9           3.8            6.4           2.0   
+132  133            6.4           2.8            5.6           2.2   
+133  134            6.3           2.8            5.1           1.5   
+134  135            6.1           2.6            5.6           1.4   
+135  136            7.7           3.0            6.1           2.3   
+136  137            6.3           3.4            5.6           2.4   
+137  138            6.4           3.1            5.5           1.8   
+138  139            6.0           3.0            4.8           1.8   
+139  140            6.9           3.1            5.4           2.1   
+140  141            6.7           3.1            5.6           2.4   
+141  142            6.9           3.1            5.1           2.3   
+142  143            5.8           2.7            5.1           1.9   
+143  144            6.8           3.2            5.9           2.3   
+144  145            6.7           3.3            5.7           2.5   
+145  146            6.7           3.0            5.2           2.3   
+146  147            6.3           2.5            5.0           1.9   
+147  148            6.5           3.0            5.2           2.0   
+148  149            6.2           3.4            5.4           2.3   
+149  150            5.9           3.0            5.1           1.8   
+
+             species  
+0        Iris-setosa  
+1        Iris-setosa  
+2        Iris-setosa  
+3        Iris-setosa  
+4        Iris-setosa  
+5        Iris-setosa  
+6        Iris-setosa  
+7        Iris-setosa  
+8        Iris-setosa  
+9        Iris-setosa  
+10       Iris-setosa  
+11       Iris-setosa  
+12       Iris-setosa  
+13       Iris-setosa  
+14       Iris-setosa  
+15       Iris-setosa  
+16       Iris-setosa  
+17       Iris-setosa  
+18       Iris-setosa  
+19       Iris-setosa  
+20       Iris-setosa  
+21       Iris-setosa  
+22       Iris-setosa  
+23       Iris-setosa  
+24       Iris-setosa  
+25       Iris-setosa  
+26       Iris-setosa  
+27       Iris-setosa  
+28       Iris-setosa  
+29       Iris-setosa  
+30       Iris-setosa  
+31       Iris-setosa  
+32       Iris-setosa  
+33       Iris-setosa  
+34       Iris-setosa  
+35       Iris-setosa  
+36       Iris-setosa  
+37       Iris-setosa  
+38       Iris-setosa  
+39       Iris-setosa  
+40       Iris-setosa  
+41       Iris-setosa  
+42       Iris-setosa  
+43       Iris-setosa  
+44       Iris-setosa  
+45       Iris-setosa  
+46       Iris-setosa  
+47       Iris-setosa  
+48       Iris-setosa  
+49       Iris-setosa  
+50   Iris-versicolor  
+51   Iris-versicolor  
+52   Iris-versicolor  
+53   Iris-versicolor  
+54   Iris-versicolor  
+55   Iris-versicolor  
+56   Iris-versicolor  
+57   Iris-versicolor  
+58   Iris-versicolor  
+59   Iris-versicolor  
+60   Iris-versicolor  
+61   Iris-versicolor  
+62   Iris-versicolor  
+63   Iris-versicolor  
+64   Iris-versicolor  
+65   Iris-versicolor  
+66   Iris-versicolor  
+67   Iris-versicolor  
+68   Iris-versicolor  
+69   Iris-versicolor  
+70   Iris-versicolor  
+71   Iris-versicolor  
+72   Iris-versicolor  
+73   Iris-versicolor  
+74   Iris-versicolor  
+75   Iris-versicolor  
+76   Iris-versicolor  
+77   Iris-versicolor  
+78   Iris-versicolor  
+79   Iris-versicolor  
+80   Iris-versicolor  
+81   Iris-versicolor  
+82   Iris-versicolor  
+83   Iris-versicolor  
+84   Iris-versicolor  
+85   Iris-versicolor  
+86   Iris-versicolor  
+87   Iris-versicolor  
+88   Iris-versicolor  
+89   Iris-versicolor  
+90   Iris-versicolor  
+91   Iris-versicolor  
+92   Iris-versicolor  
+93   Iris-versicolor  
+94   Iris-versicolor  
+95   Iris-versicolor  
+96   Iris-versicolor  
+97   Iris-versicolor  
+98   Iris-versicolor  
+99   Iris-versicolor  
+100   Iris-virginica  
+101   Iris-virginica  
+102   Iris-virginica  
+103   Iris-virginica  
+104   Iris-virginica  
+105   Iris-virginica  
+106   Iris-virginica  
+107   Iris-virginica  
+108   Iris-virginica  
+109   Iris-virginica  
+110   Iris-virginica  
+111   Iris-virginica  
+112   Iris-virginica  
+113   Iris-virginica  
+114   Iris-virginica  
+115   Iris-virginica  
+116   Iris-virginica  
+117   Iris-virginica  
+118   Iris-virginica  
+119   Iris-virginica  
+120   Iris-virginica  
+121   Iris-virginica  
+122   Iris-virginica  
+123   Iris-virginica  
+124   Iris-virginica  
+125   Iris-virginica  
+126   Iris-virginica  
+127   Iris-virginica  
+128   Iris-virginica  
+129   Iris-virginica  
+130   Iris-virginica  
+131   Iris-virginica  
+132   Iris-virginica  
+133   Iris-virginica  
+134   Iris-virginica  
+135   Iris-virginica  
+136   Iris-virginica  
+137   Iris-virginica  
+138   Iris-virginica  
+139   Iris-virginica  
+140   Iris-virginica  
+141   Iris-virginica  
+142   Iris-virginica  
+143   Iris-virginica  
+144   Iris-virginica  
+145   Iris-virginica  
+146   Iris-virginica  
+147   Iris-virginica  
+148   Iris-virginica  
+149   Iris-virginica  
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Cara%20mengumpulkan%20data%20dari%20berbagai%20sumber.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">CARA MENGUMPULKAN DATA DARI BERBAGAI SUMBER</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Tugas%20Pendata-DecisionTree.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Tugas-Pendata-DecisionTree</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By 21-190 Yanuar Pratama Dicha Putra
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
